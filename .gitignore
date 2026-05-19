@@ -1,0 +1,32 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code local config
+.claude/
+
+# Source materials — kept locally, not deployed
+Preston_Danielson_Controls_Resume.md
+danielson_systems_website_spec.md
+
+# Node (in case tooling is added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build output (none expected for static site, but reserve)
+dist/
+build/

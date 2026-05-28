@@ -18,6 +18,9 @@
   --color-grid:         rgba(30, 34, 40, 0.05);
   --color-grid-major:   rgba(30, 34, 40, 0.11);
   --color-ink:          #2b3036;
+  --color-canvas:       #fcfcfa;
+  --color-panel:        #ffffff;
+  --color-panel-border: rgba(30, 34, 40, 0.35);
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -53,6 +56,25 @@
   --gutter:       1.25rem;
 }
 
+/* Dark theme — evokes AutoCAD model space. Applied by theme.js via
+   data-theme on <html>; defaults to the visitor's system preference. */
+:root[data-theme="dark"] {
+  --color-text:         #e4e7ea;
+  --color-text-muted:   #9aa3ac;
+  --color-text-subtle:  #6f777f;
+  --color-bg:           #1b2026;
+  --color-bg-alt:       #232a32;
+  --color-rule:         #363d45;
+  --color-accent:       #5b9bd5;
+  --color-accent-hover: #7fb2e4;
+  --color-grid:         rgba(150, 165, 182, 0.05);
+  --color-grid-major:   rgba(150, 165, 182, 0.10);
+  --color-ink:          #7e8a97;
+  --color-canvas:       #15181d;
+  --color-panel:        #222831;
+  --color-panel-border: rgba(150, 165, 182, 0.22);
+}
+
 /* ----- Reset / base ----- */
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -73,7 +95,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fcfcfa;
+  background-color: var(--color-canvas);
   background-image:
     linear-gradient(var(--color-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-grid) 1px, transparent 1px),
@@ -138,6 +160,9 @@ img, svg { max-width: 100%; height: auto; display: block; }
 /* ----- Header / nav ----- */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   border-bottom: 4px solid var(--color-accent);
   background: var(--color-bg);
 }
@@ -181,13 +206,36 @@ img, svg { max-width: 100%; height: auto; display: block; }
   border-bottom-color: var(--color-accent);
 }
 
+/* Theme toggle (light/dark) */
+.theme-toggle {
+  appearance: none;
+  background: none;
+  border: none;
+  margin: 0;
+  margin-left: var(--space-1);
+  padding: 0.25rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+.theme-toggle:hover { color: var(--color-text); }
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.theme-toggle svg { display: block; }
+
 /* ----- Panel (content as a drawing entity on the grid) ----- */
 
 .panel {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid rgba(30, 34, 40, 0.35);
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-panel-border);
   padding: var(--space-4);
+  cursor: auto;
   /* corner grips — the squares CAD shows on a selected entity */
   background-image:
     linear-gradient(var(--color-accent), var(--color-accent)),
@@ -227,14 +275,22 @@ img, svg { max-width: 100%; height: auto; display: block; }
 
 /* ----- UCS origin marker (bottom-left easter egg) ----- */
 
-.ucs-corner { margin-block: var(--space-4) var(--space-3); opacity: 0.85; }
+.ucs-corner {
+  position: sticky;
+  bottom: var(--space-3);
+  margin-block: var(--space-4) var(--space-3);
+  padding-left: var(--gutter);
+  color: var(--color-ink);
+  opacity: 0.85;
+  pointer-events: none;
+}
 
 /* ----- Title-block footer ----- */
 
 .title-block {
   margin-top: auto;
   border-top: 2px solid var(--color-accent);
-  background-color: #ffffff;
+  background-color: var(--color-panel);
 }
 .title-block__grid {
   display: grid;
@@ -250,7 +306,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
   display: flex;
   flex-direction: column;
   gap: 3px;
-  background-color: #ffffff;
+  background-color: var(--color-panel);
 }
 .tb-label {
   font-family: var(--font-mono);
@@ -269,7 +325,8 @@ main {
   flex: 1 0 auto;
   position: relative;
   z-index: 0;
-  overflow: hidden;
+  overflow: clip;
+  cursor: crosshair;
 }
 
 .section {

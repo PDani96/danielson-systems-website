@@ -12,9 +12,8 @@ Desktop.ini
 # Claude Code local config
 .claude/
 
-# Source materials — kept locally, not deployed
-Preston_Danielson_Controls_Resume.md
-danielson_systems_website_spec.md
+# Source/reference materials — kept locally, not deployed
+docs/
 
 # Node (in case tooling is added later)
 node_modules/

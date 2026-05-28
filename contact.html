@@ -23,51 +23,136 @@
 
   <main>
 
+    <!-- P&ID / instrument loop (top-right) -->
+    <svg class="bg-drawing bg-drawing--tr" viewBox="0 0 460 720" aria-hidden="true" focusable="false">
+      <g stroke="currentColor" stroke-width="2" fill="none">
+        <rect x="60" y="50" width="170" height="200" />
+        <line x1="60" y1="95" x2="230" y2="95" />
+        <line x1="145" y1="250" x2="145" y2="360" />
+        <path d="M122 340 L168 360 L122 380 Z" />
+        <path d="M168 340 L122 360 L168 380 Z" />
+        <line x1="145" y1="380" x2="145" y2="503" />
+        <circle cx="145" cy="545" r="42" />
+        <line x1="145" y1="587" x2="145" y2="660" />
+        <line x1="60" y1="660" x2="360" y2="660" />
+        <circle cx="330" cy="130" r="28" />
+        <line x1="302" y1="130" x2="358" y2="130" />
+        <circle cx="330" cy="360" r="28" />
+        <line x1="302" y1="360" x2="358" y2="360" />
+      </g>
+      <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-dasharray="5 5">
+        <line x1="230" y1="130" x2="302" y2="130" />
+        <line x1="168" y1="360" x2="302" y2="360" />
+      </g>
+      <g fill="currentColor" font-family="ui-monospace, monospace" font-size="13">
+        <text x="318" y="135">LT</text>
+        <text x="318" y="365">FT</text>
+      </g>
+    </svg>
+
+    <!-- electrical panelboard (bottom-left) -->
+    <svg class="bg-drawing bg-drawing--bl" viewBox="0 0 300 470" aria-hidden="true" focusable="false">
+      <g stroke="currentColor" stroke-width="2" fill="none">
+        <rect x="18" y="12" width="264" height="446" />
+        <rect x="34" y="28" width="232" height="414" />
+        <rect x="108" y="42" width="84" height="34" />
+        <line x1="150" y1="100" x2="150" y2="386" />
+        <rect x="50" y="100" width="88" height="26" />
+        <rect x="50" y="134" width="88" height="26" />
+        <rect x="50" y="168" width="88" height="26" />
+        <rect x="50" y="202" width="88" height="26" />
+        <rect x="50" y="236" width="88" height="26" />
+        <rect x="50" y="270" width="88" height="26" />
+        <rect x="50" y="304" width="88" height="26" />
+        <rect x="162" y="100" width="88" height="26" />
+        <rect x="162" y="134" width="88" height="26" />
+        <rect x="162" y="168" width="88" height="26" />
+        <rect x="162" y="202" width="88" height="26" />
+        <rect x="162" y="236" width="88" height="26" />
+        <rect x="162" y="270" width="88" height="26" />
+        <rect x="162" y="304" width="88" height="26" />
+      </g>
+    </svg>
+
     <section class="section">
       <div class="container">
-        <p class="section__eyebrow">Contact</p>
-        <h1>Get in touch</h1>
-        <p class="prose" style="margin-top: var(--space-3);">
-          Available for contract work in controls, automation, and embedded software. Email and phone are the fastest ways to reach me &mdash; either is fine.
-        </p>
+        <div class="panel">
+          <p class="section-label">Contact</p>
+          <h1 style="margin-top: var(--space-1);">Get in touch</h1>
+          <p class="prose" style="margin-top: var(--space-3);">
+            Available for contract work in industrial controls and integration. The best way to reach me is by email or phone.
+          </p>
 
-        <ul class="contact-list" style="margin-top: var(--space-5);">
-          <li class="contact-list__item">
-            <div class="contact-list__label">Email</div>
-            <div class="contact-list__value">
-              <a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a>
-            </div>
-          </li>
-          <li class="contact-list__item">
-            <div class="contact-list__label">Phone</div>
-            <div class="contact-list__value">
-              <a href="tel:+12253014116">(225) 301-4116</a>
-            </div>
-          </li>
-          <li class="contact-list__item">
-            <div class="contact-list__label">LinkedIn</div>
-            <div class="contact-list__value">
-              <a href="https://www.linkedin.com/in/preston-danielson/" rel="me noopener" target="_blank">linkedin.com/in/preston-danielson</a>
-            </div>
-          </li>
-          <li class="contact-list__item">
-            <div class="contact-list__label">Location</div>
-            <div class="contact-list__value">The Colony, Texas</div>
-          </li>
-        </ul>
+          <ul class="contact-list" style="margin-top: var(--space-5);">
+            <li class="contact-list__item">
+              <div class="contact-list__label">Email</div>
+              <div class="contact-list__value">
+                <a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a>
+              </div>
+            </li>
+            <li class="contact-list__item">
+              <div class="contact-list__label">Phone</div>
+              <div class="contact-list__value">
+                <a href="tel:+12253014116">(225) 301-4116</a>
+              </div>
+            </li>
+            <li class="contact-list__item">
+              <div class="contact-list__label">LinkedIn</div>
+              <div class="contact-list__value">
+                <a href="https://www.linkedin.com/in/preston-danielson/" rel="me noopener" target="_blank">linkedin.com/in/preston-danielson</a>
+              </div>
+            </li>
+            <li class="contact-list__item">
+              <div class="contact-list__label">Location</div>
+              <div class="contact-list__value">The Colony, Texas</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
+    <div class="container ucs-corner">
+      <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true" focusable="false">
+        <line x1="9" y1="40" x2="9" y2="9" stroke="#2f9e4f" stroke-width="1.8" />
+        <line x1="9" y1="40" x2="40" y2="40" stroke="#d23f3f" stroke-width="1.8" />
+        <path d="M9 4 L5.5 12 L12.5 12 Z" fill="#2f9e4f" />
+        <path d="M44 40 L36 36.5 L36 43.5 Z" fill="#d23f3f" />
+        <rect x="5.5" y="36.5" width="7" height="7" fill="none" stroke="#2b3036" stroke-width="1.4" />
+        <text x="14" y="13" font-family="ui-monospace, monospace" font-size="10" fill="#2f9e4f">Y</text>
+        <text x="33" y="34" font-family="ui-monospace, monospace" font-size="10" fill="#d23f3f">X</text>
+      </svg>
+    </div>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__contact">
-        <a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a>
-        <a href="tel:+12253014116">(225) 301-4116</a>
-        <span>The Colony, TX</span>
+  <footer class="title-block">
+    <div class="container">
+      <div class="title-block__grid">
+        <div class="tb-cell">
+          <span class="tb-label">Firm</span>
+          <span class="tb-value">Danielson Systems LLC</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Discipline</span>
+          <span class="tb-value">Industrial Controls &amp; Systems Integration</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Location</span>
+          <span class="tb-value">The Colony, TX</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Email</span>
+          <span class="tb-value"><a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a></span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Phone</span>
+          <span class="tb-value"><a href="tel:+12253014116">(225) 301-4116</a></span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Sheet</span>
+          <span class="tb-value">Contact &middot; Rev 2026</span>
+        </div>
       </div>
-      <div>&copy; 2026 Danielson Systems LLC</div>
     </div>
   </footer>
 

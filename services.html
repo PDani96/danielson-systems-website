@@ -23,72 +23,169 @@
 
   <main>
 
+    <!-- electrical panelboard (top-right) -->
+    <svg class="bg-drawing bg-drawing--tr" viewBox="0 0 300 470" aria-hidden="true" focusable="false">
+      <g stroke="currentColor" stroke-width="2" fill="none">
+        <rect x="18" y="12" width="264" height="446" />
+        <rect x="34" y="28" width="232" height="414" />
+        <rect x="108" y="42" width="84" height="34" />
+        <line x1="150" y1="100" x2="150" y2="386" />
+        <rect x="50" y="100" width="88" height="26" />
+        <rect x="50" y="134" width="88" height="26" />
+        <rect x="50" y="168" width="88" height="26" />
+        <rect x="50" y="202" width="88" height="26" />
+        <rect x="50" y="236" width="88" height="26" />
+        <rect x="50" y="270" width="88" height="26" />
+        <rect x="50" y="304" width="88" height="26" />
+        <rect x="50" y="338" width="88" height="26" />
+        <rect x="162" y="100" width="88" height="26" />
+        <rect x="162" y="134" width="88" height="26" />
+        <rect x="162" y="168" width="88" height="26" />
+        <rect x="162" y="202" width="88" height="26" />
+        <rect x="162" y="236" width="88" height="26" />
+        <rect x="162" y="270" width="88" height="26" />
+        <rect x="162" y="304" width="88" height="26" />
+        <rect x="162" y="338" width="88" height="26" />
+      </g>
+    </svg>
+
+    <!-- ladder-logic wiring (bottom-left) -->
+    <svg class="bg-drawing bg-drawing--bl" viewBox="0 0 320 420" aria-hidden="true" focusable="false">
+      <g stroke="currentColor" stroke-width="2" fill="none">
+        <line x1="22" y1="14" x2="22" y2="406" />
+        <line x1="298" y1="14" x2="298" y2="406" />
+        <line x1="22" y1="70" x2="110" y2="70" />
+        <line x1="110" y1="56" x2="110" y2="84" />
+        <line x1="128" y1="56" x2="128" y2="84" />
+        <line x1="128" y1="70" x2="248" y2="70" />
+        <circle cx="266" cy="70" r="16" />
+        <line x1="282" y1="70" x2="298" y2="70" />
+        <line x1="22" y1="160" x2="110" y2="160" />
+        <line x1="110" y1="146" x2="110" y2="174" />
+        <line x1="128" y1="146" x2="128" y2="174" />
+        <line x1="128" y1="160" x2="248" y2="160" />
+        <circle cx="266" cy="160" r="16" />
+        <line x1="282" y1="160" x2="298" y2="160" />
+        <line x1="22" y1="250" x2="150" y2="250" />
+        <line x1="150" y1="236" x2="150" y2="264" />
+        <line x1="168" y1="236" x2="168" y2="264" />
+        <line x1="168" y1="250" x2="248" y2="250" />
+        <circle cx="266" cy="250" r="16" />
+        <line x1="282" y1="250" x2="298" y2="250" />
+        <line x1="22" y1="340" x2="110" y2="340" />
+        <line x1="110" y1="326" x2="110" y2="354" />
+        <line x1="128" y1="326" x2="128" y2="354" />
+        <line x1="128" y1="340" x2="248" y2="340" />
+        <circle cx="266" cy="340" r="16" />
+        <line x1="282" y1="340" x2="298" y2="340" />
+      </g>
+    </svg>
+
     <section class="section">
       <div class="container">
-        <p class="section__eyebrow">Services</p>
-        <h1>What I take on</h1>
-        <p class="prose" style="margin-top: var(--space-3);">
-          Contract work across the lifecycle of an industrial control system — from electrical design and programming to commissioning, and from new installations to modernizing what's already running. Most engagements draw on more than one of the areas below.
-        </p>
-
-        <ul class="service-list" style="margin-top: var(--space-5);">
-
-          <li>
-            <h3>Industrial Controls &amp; Integration</h3>
-            <p>PLC programming, HMI development, and the electrical design that ties a control system together. Experience integrating drives, sensors, safety devices, and building-management systems into working installations.</p>
-            <ul>
-              <li>PLC &amp; HMI programming — Schneider Modicon, Allen-Bradley / FactoryTalk</li>
-              <li>Electrical design &amp; panel layout — AutoCAD Electrical, EPLAN; UL508A / NEC familiarity</li>
-              <li>Industrial protocols — Ethernet/IP, Modbus TCP/RTU, CAN, serial / field-bus</li>
-              <li>BMS, sensor, and device integration — BACnet, Modbus</li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Industrial Software</h3>
-            <p>Software built for the plant floor and the equipment behind it — the layer between control hardware and the people and systems that need its data.</p>
-            <ul>
-              <li>Custom industrial HMIs and dashboards</li>
-              <li>Real-time monitoring and OT-to-IT data pipelines</li>
-              <li>Edge gateway software</li>
-              <li>Engineering workflow automation</li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>System Modernization &amp; Upgrades</h3>
-            <p>Bringing aging control systems forward without disrupting production. Migrations and retrofits planned around operational continuity, not rip-and-replace.</p>
-            <ul>
-              <li>Legacy HMI and PLC platform migrations</li>
-              <li>Language migrations (e.g., Visual Basic to Python)</li>
-              <li>Control system retrofits that preserve operational continuity</li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Commissioning &amp; Field Services</h3>
-            <p>Getting systems running on-site and keeping them running. Startup, acceptance testing, and hands-on troubleshooting in the field.</p>
-            <ul>
-              <li>On-site commissioning and startup</li>
-              <li>Factory and site acceptance testing (FAT / SAT)</li>
-              <li>Troubleshooting, field support, and cutover during migrations</li>
-            </ul>
-          </li>
-
-        </ul>
+        <div class="panel">
+          <h1 class="section-label">Services</h1>
+          <p class="prose" style="margin-top: var(--space-3);">
+            Contract work across the lifecycle of an industrial control system — from electrical design and programming to commissioning, and from new installations to modernizing what's already running. Most engagements draw on more than one of the areas below.
+          </p>
+        </div>
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="panel">
+          <ul class="service-list">
+
+            <li>
+              <h2>Industrial Controls &amp; Integration</h2>
+              <p>PLC programming, HMI development, and the electrical design that ties a control system together. Experience integrating drives, sensors, safety devices, and building-management systems into working installations.</p>
+              <ul>
+                <li>PLC &amp; HMI programming — Schneider Modicon, Allen-Bradley / FactoryTalk</li>
+                <li>Electrical design &amp; panel layout — AutoCAD Electrical, EPLAN; UL508A / NEC familiarity</li>
+                <li>Industrial protocols — Ethernet/IP, Modbus TCP/RTU, CAN, serial / field-bus</li>
+                <li>BMS, sensor, and device integration — BACnet, Modbus</li>
+              </ul>
+            </li>
+
+            <li>
+              <h2>Industrial Software</h2>
+              <p>Software built for the plant floor and the equipment behind it — the layer between control hardware and the people and systems that need its data.</p>
+              <ul>
+                <li>Custom industrial HMIs and dashboards</li>
+                <li>Real-time monitoring and OT-to-IT data pipelines</li>
+                <li>Edge gateway software</li>
+                <li>Engineering workflow automation</li>
+              </ul>
+            </li>
+
+            <li>
+              <h2>System Modernization &amp; Upgrades</h2>
+              <p>Bringing aging control systems forward without disrupting production. Migrations and retrofits planned around operational continuity, not rip-and-replace.</p>
+              <ul>
+                <li>Legacy HMI and PLC platform migrations</li>
+                <li>Language migrations (e.g., Visual Basic to Python)</li>
+                <li>Control system retrofits that preserve operational continuity</li>
+              </ul>
+            </li>
+
+            <li>
+              <h2>Commissioning &amp; Field Services</h2>
+              <p>Getting systems running on-site and keeping them running. Startup, acceptance testing, and hands-on troubleshooting in the field.</p>
+              <ul>
+                <li>On-site commissioning and startup</li>
+                <li>Factory and site acceptance testing (FAT / SAT)</li>
+                <li>Troubleshooting, field support, and cutover during migrations</li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="container ucs-corner">
+      <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true" focusable="false">
+        <line x1="9" y1="40" x2="9" y2="9" stroke="#2f9e4f" stroke-width="1.8" />
+        <line x1="9" y1="40" x2="40" y2="40" stroke="#d23f3f" stroke-width="1.8" />
+        <path d="M9 4 L5.5 12 L12.5 12 Z" fill="#2f9e4f" />
+        <path d="M44 40 L36 36.5 L36 43.5 Z" fill="#d23f3f" />
+        <rect x="5.5" y="36.5" width="7" height="7" fill="none" stroke="#2b3036" stroke-width="1.4" />
+        <text x="14" y="13" font-family="ui-monospace, monospace" font-size="10" fill="#2f9e4f">Y</text>
+        <text x="33" y="34" font-family="ui-monospace, monospace" font-size="10" fill="#d23f3f">X</text>
+      </svg>
+    </div>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__contact">
-        <a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a>
-        <a href="tel:+12253014116">(225) 301-4116</a>
-        <span>The Colony, TX</span>
+  <footer class="title-block">
+    <div class="container">
+      <div class="title-block__grid">
+        <div class="tb-cell">
+          <span class="tb-label">Firm</span>
+          <span class="tb-value">Danielson Systems LLC</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Discipline</span>
+          <span class="tb-value">Industrial Controls &amp; Systems Integration</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Location</span>
+          <span class="tb-value">The Colony, TX</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Email</span>
+          <span class="tb-value"><a href="mailto:preston@danielsonsystems.com">preston@danielsonsystems.com</a></span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Phone</span>
+          <span class="tb-value"><a href="tel:+12253014116">(225) 301-4116</a></span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Sheet</span>
+          <span class="tb-value">Services &middot; Rev 2026</span>
+        </div>
       </div>
-      <div>&copy; 2026 Danielson Systems LLC</div>
     </div>
   </footer>
 

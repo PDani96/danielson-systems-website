@@ -457,6 +457,14 @@ main {
 
 /* ----- About page ----- */
 
+.role-line {
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
 .about-intro {
   display: grid;
   grid-template-columns: 1fr;

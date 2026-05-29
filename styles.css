@@ -8,19 +8,19 @@
   --color-text:         #111418;
   --color-text-muted:   #5a6470;
   --color-text-subtle:  #8a8f97;
-  --color-bg:           #fdfdfc;
-  --color-bg-alt:       #f5f3ee;
-  --color-rule:         #e4e2dd;
+  --color-bg:           #d7d7d6;
+  --color-bg-alt:       #dcdcdb;
+  --color-rule:         #cdcdcc;
   --color-accent:       #235a97;
   --color-accent-hover: #18426e;
   --color-copper:       #9b6e54;  /* hardware-side secondary accent (from the logo D) */
 
   /* CAD canvas */
-  --color-grid:         rgba(30, 34, 40, 0.05);
-  --color-grid-major:   rgba(30, 34, 40, 0.11);
+  --color-grid:         rgba(30, 34, 40, 0.06);
+  --color-grid-major:   rgba(30, 34, 40, 0.13);
   --color-ink:          #2b3036;
-  --color-canvas:       #fcfcfa;
-  --color-panel:        #ffffff;
+  --color-canvas:       #d7d7d6;
+  --color-panel:        #e6e6e5;
   --color-panel-border: rgba(30, 34, 40, 0.35);
 
   /* Typography */
@@ -166,7 +166,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
   top: 0;
   z-index: 10;
   border-bottom: 4px solid var(--color-accent);
-  background: var(--color-bg);
+  background: var(--color-panel);
 }
 
 .site-header__inner {

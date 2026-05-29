@@ -176,14 +176,21 @@ img, svg { max-width: 100%; height: auto; display: block; }
   flex-wrap: wrap;
 }
 
-.wordmark {
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.brand__mark { display: block; flex: none; width: 40px; height: auto; }
+.brand__name {
   font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--color-accent);
-  text-decoration: none;
 }
-.wordmark:hover { color: var(--color-accent-hover); }
+.brand__n1 { color: #737a81; }
+.brand__n2 { color: var(--color-accent); }
+.brand:hover .brand__n2 { color: var(--color-accent-hover); }
 
 .nav {
   display: flex;
